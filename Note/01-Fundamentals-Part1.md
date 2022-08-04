@@ -1,5 +1,12 @@
 # Note
 
+## Concept
+
+- Javascript has **the backwards compatibility**.
+- Simply use the latest Google Chrome during development.
+- Use **Babel** to transpile and polyfill your code during production(converting back to ES5 to ensure browser compatibility for all users).
+- ES5: Fully supported in all browsers (down to IE 9 from 2011).
+
 ## Variable Declaration
 
 - **CamelCase** variable name. e.g. firstName

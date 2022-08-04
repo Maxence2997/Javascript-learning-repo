@@ -85,8 +85,18 @@
 // console.log(Boolean(NaN));
 // console.log(Boolean('0'));
 
-const age = 18;
+// const day = 'monday';
 
-if (age == 18) {
-    console.log("Yeah!");
-}
+// switch (day) {
+//     case 'monday':
+//         console.log(`Today is monday.`);
+//         console.log(`Tomorrow is tuesday.`);
+//         break;
+//     case 'tuesday':
+//         console.log(`Today is tuesday.`);
+//         console.log(`Tomorrow is wednesday.`);
+//         break;
+
+//     default:
+//         console.log(`Not a valid day.`);
+// }
