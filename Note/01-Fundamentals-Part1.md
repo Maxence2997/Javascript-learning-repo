@@ -15,7 +15,7 @@
 - **Const** is named with all **UPPERCASE**, editor will show it with different color.
 - String can use both **"** and **'**
 - If a variable declared without **let**, **var** or **const** it will be global variable.
-<br>
+
     |       let         |       var         |
     | ----------------- | ----------------- |
     | Block scope       | function scoped   |
