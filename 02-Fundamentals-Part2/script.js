@@ -39,39 +39,39 @@
 
 // friends.shift();
 
-const max = {
-    firstName: 'Maxence',
-    lastName: 'Yang',
-    birthYear: 1995,
-    job: 'Programmer',
-    friends: ['Mike', 'Joe', 'Joseph'],
+// const max = {
+//     firstName: 'Maxence',
+//     lastName: 'Yang',
+//     birthYear: 1995,
+//     job: 'Programmer',
+//     friends: ['Mike', 'Joe', 'Joseph'],
 
-    calcAge: function () { // function properties
-        return 2037 - this.birthYear
-    },
+//     calcAge: function () { // function properties
+//         return 2037 - this.birthYear
+//     },
 
-    //fullName: (txt) => { return this.firstName + txt + this.lastName }
+//     //fullName: (txt) => { return this.firstName + txt + this.lastName }
 
-};
+// };
 
 
-console.log(max.firstName);
-console.log(max['firstName']);
+// console.log(max.firstName);
+// console.log(max['firstName']);
 
-const nameKey = 'Name';
-if (max['first' + nameKey]) {
-    console.log(max['first' + nameKey]);
-} else {
-    console.log(`Wrong answer`);
-}
+// const nameKey = 'Name';
+// if (max['first' + nameKey]) {
+//     console.log(max['first' + nameKey]);
+// } else {
+//     console.log(`Wrong answer`);
+// }
 
-max.gender = 'Male';
-max['sports'] = ['Football', 'Volleyball'];
-console.log(max);
+// max.gender = 'Male';
+// max['sports'] = ['Football', 'Volleyball'];
+// console.log(max);
 
-console.log(`${max.firstName} has ${max.friends.length} friends. The best friend is ${max.friends[1]}`);
+// console.log(`${max.firstName} has ${max.friends.length} friends. The best friend is ${max.friends[1]}`);
 
-console.log(max.calcAge());
-console.log(max['calcAge']());
+// console.log(max.calcAge());
+// console.log(max['calcAge']());
 
-//console.log(max.fullName());
+// //console.log(max.fullName());
