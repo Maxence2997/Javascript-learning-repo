@@ -11,7 +11,9 @@
     - `Live Server`
     - `Prettier`
     - `Settings Sync`
-    - `Node.js environment`
+    - `Node.js Environment`
+    - `Auto Rename tag`
+    - `Auto Close tag`
 
 4. With Live-Server in VSCode, you can use custom browser with **Custom Browser in Settings**(There are chrome, Microsoft Edge, FireFox ...etc.)
    ![Custom Browser in Settings](/assets/2022-8-15-12-54-41.png)
