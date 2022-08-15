@@ -11,29 +11,28 @@ Function Expression allows us to create an **anonymous function** which doesn't 
 ```javascript
 console.log(printFruit(10, 3)); // Run normally
 
-console.log(juice3(10, 3));     // Uncaught ReferenceError: 
-console.log(juice2(10, 3));     // Cannot access ${function name} before initialization at ....
- 
+console.log(juice3(10, 3)); // Uncaught ReferenceError:
+console.log(juice2(10, 3)); // Cannot access ${function name} before initialization at ....
+
 // Function Declaration
 function printFruit(NumOfApple, NumOfOrange) {
-
-    const juice = `Juice with ${NumOfApple} apples and ${NumOfOrange} oranges`;
-    return juice;
+  const juice = `Juice with ${NumOfApple} apples and ${NumOfOrange} oranges`;
+  return juice;
 }
 // Function Expression
 const juice2 = function (NumOfApple, NumOfOrange) {
-
-    const juice = `Juice with ${NumOfApple} apples and ${NumOfOrange} oranges`;
-    return juice;
-}
+  const juice = `Juice with ${NumOfApple} apples and ${NumOfOrange} oranges`;
+  return juice;
+};
 
 // Arrow Function (like Lambda in Java)
-const juice3 = (NumOfApple, NumOfOrange) => `Juice with ${NumOfApple} apples and ${NumOfOrange} oranges`;
+const juice3 = (NumOfApple, NumOfOrange) =>
+  `Juice with ${NumOfApple} apples and ${NumOfOrange} oranges`;
 
-const juice4 = (NumOfApple, NumOfOrange) => { 
-    console.log(NumOfApple);
-    return `Juice with ${NumOfApple} apples and ${NumOfOrange} oranges`;
-}
+const juice4 = (NumOfApple, NumOfOrange) => {
+  console.log(NumOfApple);
+  return `Juice with ${NumOfApple} apples and ${NumOfOrange} oranges`;
+};
 
 console.log(printFruit(10, 3));
 console.log(juice2(10, 3));
@@ -75,7 +74,7 @@ const max = {
         return 2037 - this.birthYear
     }
 
-    //fullName: (txt) => { return this.firstName + txt + this.lastName } 
+    //fullName: (txt) => { return this.firstName + txt + this.lastName }
     //this keyword not work
 };
 ```
@@ -83,14 +82,14 @@ const max = {
 Get properties in an object in these ways:
 
 ```javascript
-console.log(max.firstName);             // Maxence
-console.log(max['firstName']);          // Maxence
+console.log(max.firstName); // Maxence
+console.log(max["firstName"]); // Maxence
 
-const nameKey = 'Name';
-console.log(max['first' + nameKey]);    // Maxence
+const nameKey = "Name";
+console.log(max["first" + nameKey]); // Maxence
 console.log(max.calcAge());
 
-console.log(max['calcAge']); 
+console.log(max["calcAge"]);
 /* It will get result below
 
 ƒ () { // function properties
@@ -98,7 +97,7 @@ console.log(max['calcAge']);
     }
 
 because it will take property "calcAge" as a value property.
-*/ 
+*/
 ```
 
 Add new properties into an object in these ways:
@@ -107,4 +106,3 @@ Add new properties into an object in these ways:
 max.gender = 'Male';
 max['sports'] = ['Football', 'Volleyball'];
 ```
-
